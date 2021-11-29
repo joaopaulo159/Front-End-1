@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CHECKPOINT 2</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+   <form action="/cadastro" method="POST">
+   
+<div class="formulario">
+  <h2>Cadastro</h2>
+    <div class="bloco1">
+          <div class="nome">
+        <div><label for="name">Nome:</label></div>
+        <div><input type="text" id="name" maxlength="100"></div>
+    </div>
+    <div class="nascimento">
+        <div><label for="nasc">Data de Nascimento</label></div>
+        <div><input type="date" id="nasc"></div>
+    </div>
+    </div>
+    <div class="bloco2">
+        <div class="eletronico">
+        <div><label for="email">E-mail:</label></div>
+        <div><input type="email" id="email"></div>
+    </div>  
+        
+    <div class="telefone">
+      <div><label for="telf">Telefone:</label></div>
+      <div><input type="tel" id="telf" maxlength="14" value="(11) 912345678"></div>
+    </div>
+    </div>
+    <h3>É maior de 18 anos?</h3>
+        <div class="maioridade">
+        
+        <div><input type="radio" id="maior" name="idade">
+        <label for="maior">Sim</label></div>
+        <div>
+        <input type="radio" id="menor" name="idade">
+        <label for="menor">Não. Qual sua idade?</label></div>
+      <div><input type="text" id="menor"></div>
+    </div>
+  <h3>Aonde quer ir ?</h3>
+  <div class="lugares">
+    <div><input type="checkbox" id="masp" name="vi_masp">
+    <label for="masp">MASP</label></div>
+    <div><input type="checkbox" id="Ibirapuera" name="vi_Ibirapuera">
+    <label for="Ibirapuera">Ibirapuera</label></div>
+    <div><input type="checkbox" id="Av.Paulista" name="vi_Paulista">
+    <label for="Av.Paulista">Av.Paulista</label></div>
+    <div><input type="checkbox" id="museu" name="vi_museu">
+    <label for="museu">Museu do Ipiranga</label></div>
+    <div><input type="checkbox" id="catedral" name="vi_catedral">
+    <label for="catedral">Catedral da Sé</label></div>
+   </div>
+   <h3>Qual interesse em SP ?</h3>
+  <div class="int">
+    
+    <div class="sel2">
+    <ul style="list-style-type:none;">
+    <li><input type="checkbox" id="estudar" name="estudos">
+    <label for="estudar">Estudar</label></li>
+    <li><input type="checkbox" id="tur" name="turistico">
+    <label for="tur">Turístico</label></li>
+    <li><input type="checkbox" id="buss" name="negocios">
+    <label for="buss">Business</label></li>
+    </ul>
+    </div>
+  </div> 
+      <div class="botao">
+      <div><input type="submit" value="Submit"></div>
+      <div><input type="reset" value="Reset"></div>
+      </div>
+</div>
+
+  </form>
+  </body>
+</html>
